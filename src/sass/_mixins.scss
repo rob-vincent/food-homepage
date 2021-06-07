@@ -1,0 +1,69 @@
+@mixin clearPaddingMargin {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin animations {
+  @keyframes show {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-1rem);
+    }
+  }
+
+  @keyframes showSecond {
+    0% {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+
+  @keyframes showLine {
+    from {
+      width: 0;
+    }
+    to {
+      opacity: 1;
+      width: 90%;
+    }
+  }
+
+  @keyframes showFeatured {
+    from {
+      opacity: 0.5;
+      transform: rotateZ(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateZ(0deg);
+    }
+  }
+
+  @keyframes jump {
+    0%,
+    100% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(-0.5rem);
+    }
+  }
+}
